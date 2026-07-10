@@ -1,17 +1,93 @@
-<div class="logo"><img src="images/babamoni.png" alt="Babamoni"></div>
-<div class="logo"><img src="images/cn pixel logo.png" alt="CN Pixel"></div>
-<div class="logo"><img src="images/CREATIVE ART WEBP.webp" alt="Creative Art"></div>
-<div class="logo"><img src="images/dream hom.png" alt="Dream Hom"></div>
-<div class="logo"><img src="images/mahanam logo.png" alt="Mahanam"></div>
-<div class="logo"><img src="images/medisure.png" alt="Medisure"></div>
-<div class="logo"><img src="images/molecular logo.png" alt="Molecular"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Partner Logo Slider</title>
 
-<!-- Duplicate for seamless scrolling -->
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-<div class="logo"><img src="images/babamoni.png" alt="Babamoni"></div>
-<div class="logo"><img src="images/cn pixel logo.png" alt="CN Pixel"></div>
-<div class="logo"><img src="images/CREATIVE ART WEBP.webp" alt="Creative Art"></div>
-<div class="logo"><img src="images/dream hom.png" alt="Dream Hom"></div>
-<div class="logo"><img src="images/mahanam logo.png" alt="Mahanam"></div>
-<div class="logo"><img src="images/medisure.png" alt="Medisure"></div>
-<div class="logo"><img src="images/molecular logo.png" alt="Molecular"></div>
+body{
+background:#fff;
+font-family:Arial,sans-serif;
+}
+
+.slider{
+overflow:hidden;
+width:100%;
+padding:30px 0;
+}
+
+.slide-track{
+display:flex;
+width:max-content;
+animation:scroll 25s linear infinite;
+}
+
+.logo{
+width:180px;
+height:90px;
+display:flex;
+justify-content:center;
+align-items:center;
+margin:0 20px;
+flex-shrink:0;
+}
+
+.logo img{
+max-width:150px;
+max-height:70px;
+object-fit:contain;
+filter:grayscale(100%);
+transition:.3s;
+}
+
+.logo img:hover{
+filter:none;
+transform:scale(1.1);
+}
+
+@keyframes scroll{
+0%{
+transform:translateX(0);
+}
+100%{
+transform:translateX(-50%);
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="slider">
+
+<div class="slide-track">
+
+<div class="logo"><img src="images/babamoni.png"></div>
+<div class="logo"><img src="images/cn pixel logo.png"></div>
+<div class="logo"><img src="images/CREATIVE ART WEBP.webp"></div>
+<div class="logo"><img src="images/dream hom.png"></div>
+<div class="logo"><img src="images/mahanam logo.png"></div>
+<div class="logo"><img src="images/medisure.png"></div>
+<div class="logo"><img src="images/molecular logo.png"></div>
+
+<div class="logo"><img src="images/babamoni.png"></div>
+<div class="logo"><img src="images/cn pixel logo.png"></div>
+<div class="logo"><img src="images/CREATIVE ART WEBP.webp"></div>
+<div class="logo"><img src="images/dream hom.png"></div>
+<div class="logo"><img src="images/mahanam logo.png"></div>
+<div class="logo"><img src="images/medisure.png"></div>
+<div class="logo"><img src="images/molecular logo.png"></div>
+
+</div>
+
+</div>
+
+</body>
+</html>
